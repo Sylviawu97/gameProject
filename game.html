@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="./game.css">
+    <link rel="stylesheet"   href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <script defer src="./game.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="intro">
+        <h1 id="welcome">Welcome to "Ultimate Two-Player Card Battle Game"!</h1>
+    </div>
+    <div class="container">
+    <div class="card-holder">
+        <div class="back"></div>
+        <div class="card"></div>
+      </div>
+      <div class="card-holder">
+        <div class="back"></div>
+        <div class="card"></div>
+      </div>
+      <div class="card-holder">
+        <div class="back"></div>
+        <div class="card"></div>
+      </div>
+     
+       <div class="intro" id="introText" style="margin-left:70px;">
+           <h2 class="intro" id="h2intro" >  Here are the <button id="rule">rules</button>.</h2>
+           <h2 class="start"> After reading the rules,are you ready to start?</h2>
+           <button id="yes">YES</button>
+           <button id="no">NO</button>
+
+       
+       </div>
+    </div>
+    <div id="rules-modal">
+        1.The game has two players, referred to as Player A and Player B.
+ 
+        Each player will be dealt<b> three cards</b> randomly.
+         </br>
+        2.The numbers on the cards range from <b>1 to 10</b>.
+    </br>
+        3.If the three cards of Player A are not consecutive, for example, 4, 7, 8,
+         and Player B has three consecutive cards like 1, 2, 3, 
+then Player B wins this round.
+    </br>
+        4.If the three cards of both Player A and Player B are consecutive numbers, then the total sum of the three numbers will be compared, and the player with the larger sum wins this round. For example, if Player A's cards are 1, 2, 3, and Player B's cards are 2, 3, 4, then Player B wins.
+    </br>
+        5.If the three cards of both Player A and Player B have the same number, then it is considered a bomb, and the player who has the bomb wins this round.
+    </br>
+        6.If both Player A and Player B have a bomb card, then the numbers on the bomb card will be compared. For example, 4 bombs are larger than 3 bombs (444>333).
+    </br>
+        7.If both Player A and Player B have non-consecutive cards with three different numbers, then they need to redraw the cards and start the next round.
+    </br>
+        8.The game continues for multiple rounds until one player wins five rounds.
+    </br>
+</br>
+        <b>Good luck and have fun playing!</b>  <button id="close">close</button>
+      </div>
+   
+<div class="game">
+    <div class="players">
+     <div class="player-a">
+      <h2>player A</h2>
+        <div class="gamecards">
+              <!-- 这里放置玩家 A 的牌 -->
+            </div>
+          </div>
+    <div class="player-b">
+        <h2>player B</h2>
+            <div class="gamecards">
+              <!-- 这里放置玩家 B 的牌 -->
+            </div>
+          </div>
+        </div>
+    <div class="status">
+          <!-- 这里显示游戏状态和胜利者 -->
+        </div>
+        <button class="play-button">Restart</button>
+      </div>
+</body>
+</html>
