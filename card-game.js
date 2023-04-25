@@ -2,6 +2,7 @@ let round = 1;
 let playerAScore = 0;
 let playerBScore = 0;
 
+
 // 卡牌游戏对象
 const game = {
     // 玩家A和B
@@ -48,15 +49,18 @@ const game = {
        let resultContainer=document.getElementById("result");
       const winner = compareCards(playerACards, playerBCards);
       if (winner === 'A') {
-          console.log("Player A wins!")
+            
+        
           resultContainer.textContent = 'Player A wins!';
           playerAScore++;
       } else if (winner === 'B') {
-          console.log("Player B wins!")
+         
+       
           resultContainer.textContent = 'Player B wins!';
           playerBScore++;
       } else {
-          console.log("It is a tie")
+       
+          debugger
           resultContainer.textContent = 'Play Again!';
       }
 
@@ -107,3 +111,6 @@ function getSum(cards) {
 }
 let startGame= document.getElementById("deal-btn");
 startGame.addEventListener('click',dealCards)
+
+
+
