@@ -1,0 +1,46 @@
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color:whitesmoke;
+    font-size:30px;
+}
+
+.player-a,
+.player-b {
+    margin: 20px;
+    text-align: center;
+}
+
+.player-a-cards,.player-b-cards {
+    width: 100px;
+    height: 150px;
+    border: 1px whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bold;
+    padding-top: 120px;
+    gap:10px;
+}
+
+#result {
+    margin-top: 500px;
+    margin-left: 750px;
+    font-size: 24px;
+    font-weight: bold;
+    color:whitesmoke;
+}
+
+body{
+    background-color: #1d1c1f;
+}
+.card{
+    width: 120px;
+    display:flex;
+    flex-direction: column;
+
+}
