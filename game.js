@@ -13,17 +13,8 @@ closeIntro.addEventListener("click",function(){
     rulesText.style.display="none";
 })
 
-let startGame=document.getElementsById("yes");
-let gameContent=document.getElementsByClassName("game");
-
-startGame.addEventListener("click",function(){
-    gameContent.style.display="block";
-})
-
 let startGame=document.getElementById("yes");
-let gameContent=document.getElementsByClassName("game-container").item(0);
-// console.log(gameContent);
-startGame.addEventListener("click",function() {
+startGame.addEventListener("click",function(){
     window.location.href ='card-game.html';
 })
 
@@ -31,6 +22,3 @@ startGame.addEventListener("click",function() {
 
 
 
-
-
->>>>>>> e2ae35e (deal card)
