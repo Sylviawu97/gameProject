@@ -49,19 +49,29 @@ const game = {
        let resultContainer=document.getElementById("result");
       const winner = compareCards(playerACards, playerBCards);
       if (winner === 'A') {
-            
         
-          resultContainer.textContent = 'Player A wins!';
+        setTimeout(() => {
+
+            resultContainer.textContent = 'Player A wins!';
+        }, 3000)
           playerAScore++;
+          document.getElementById('player-a-score').textContent = playerAScore;
       } else if (winner === 'B') {
          
        
-          resultContainer.textContent = 'Player B wins!';
+          setTimeout(() => {
+
+            resultContainer.textContent = 'Player B wins!';
+        }, 3000)
           playerBScore++;
+          document.getElementById('player-b-score').textContent = playerBScore;
       } else {
        
-          debugger
-          resultContainer.textContent = 'Play Again!';
+        setTimeout(() => {
+
+            resultContainer.textContent = 'Play again!';
+        },3000)
+         
       }
 
       if (playerAScore === 5) {
@@ -114,3 +124,13 @@ startGame.addEventListener('click',dealCards)
 
 
 
+function endGame() {
+    // disable "Deal" button
+    document.getElementById('deal-btn').disabled = true;
+    // display final message
+    if (playerAScore > playerBScore) {
+        resultContainer.textContent = 'Player A wins the game!';
+    } else {
+        resultContainer.textContent = 'Player B wins the game!';
+    }
+}

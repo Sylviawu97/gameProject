@@ -6,9 +6,7 @@
     color:whitesmoke;
     font-size:30px;
 }
-#deal-btn{
 
-}
 .player-a,
 .player-b {
     margin: 60px;
@@ -59,8 +57,6 @@ body{
 }
 button {
     --c: #fff; /* text color */
-    
-   
     border: none;
     transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
     text-shadow: 
