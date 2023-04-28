@@ -32,4 +32,15 @@ To play the game, click the "Deal Cards" button to deal three cards to each play
 
 If a player wins five rounds, the game will end and the winner will be displayed.
 
+# Dependencies
+This game requires no additional dependencies. It is built with pure HTML, CSS, and JavaScript.
+
+# Future Improvements
+Some ideas for future improvements to the game include:
+Adding sound effects
+Adding animations to the cards
+Adding a timer for each round
+Adding a leaderboard to track high scores
+# Contributions
+Contributions to the game are welcome! If you find a bug or have an idea for a new feature, feel free to create a pull request.
 
