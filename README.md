@@ -26,7 +26,7 @@ To get started, simply open the game.html in a web browser. The game should load
 On the first page, you can click the "rule" button to know about the game. When you finish reading, you could click "yes" to enter to the game deck.
 
 
-#Playing the Game
+# Playing the Game
 
 To play the game, click the "Deal Cards" button to deal three cards to each player. 
 
