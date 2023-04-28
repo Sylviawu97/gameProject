@@ -1,5 +1,9 @@
-
-    // Deny the cards
+let round = 1;
+let playerAScore = 0;
+let playerBScore = 0;
+   
+   
+   // Deny the cards
   const dealCards=()=> {
 
       let playerACards = []
